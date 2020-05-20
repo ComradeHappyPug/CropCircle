@@ -6,18 +6,23 @@ public class Mousefollow : MonoBehaviour
 {
     Vector2 mousepos;
     Rigidbody2D ufoRB;
-    Vector2 velocity;
+    public float movementspeed;
+    Vector2 pos;
+    public Camera cam;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cam = FindObjectOfType<Camera>();
+        ufoRB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //gets position of mouse and character
         mousepos = Input.mousePosition;
-        velocity.y = Mathf.MoveTowards(velocity.y, roamingspeed, 1 * Time.fixedDeltaTime);
+        pos = cam.ScreenToWorldPoint(mousepos);
+        ufoRB.position = new Vector3 (pos.x,pos.y, 0); 
+
     }
 }
