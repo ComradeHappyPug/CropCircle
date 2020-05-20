@@ -21,13 +21,13 @@ public class TinFoilHats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        roaming();
     }
 
     void roaming()
     {
         //picks random direction
-        float timelim = Random.Range(2f, roamtimelimit); ;
+        float timelim = Random.Range(0f, roamtimelimit);
 
 
         if (changedirection == false)
@@ -40,25 +40,25 @@ public class TinFoilHats : MonoBehaviour
         if (timer < timelim && changedirection)
         {
             //up
-            if (direction == 1)
+            if (direction == 1 && TinFoilHat.transform.position.y < 4.5f)
             {
                 velocity.y = Mathf.MoveTowards(velocity.y, roamingspeed, roamingacceleration * Time.fixedDeltaTime);
                 TinFoilHat.velocity = new Vector2(0f, velocity.y);
             }
             //down
-            else if (direction == 2)
+            else if (direction == 2 && TinFoilHat.transform.position.y > -4.5f)
             {
                 velocity.y = Mathf.MoveTowards(velocity.y, -roamingspeed, roamingacceleration * Time.fixedDeltaTime);
                 TinFoilHat.velocity = new Vector2(0f, velocity.y);
             }
             //right
-            else if (direction == 3)
+            else if (direction == 3 && TinFoilHat.transform.position.x < 4.5f)
             {
                 velocity.x = Mathf.MoveTowards(velocity.x, roamingspeed, roamingacceleration * Time.fixedDeltaTime);
                 TinFoilHat.velocity = new Vector2(velocity.x, 0f);
             }
             //left
-            else if (direction == 4)
+            else if (direction == 4 && TinFoilHat.transform.position.x > -4.5f)
             {
                 velocity.x = Mathf.MoveTowards(velocity.x, -roamingspeed, roamingacceleration * Time.fixedDeltaTime);
                 TinFoilHat.velocity = new Vector2(velocity.x, 0f);
