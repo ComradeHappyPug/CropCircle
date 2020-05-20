@@ -6,7 +6,7 @@ public class Mousefollow : MonoBehaviour
 {
     Vector2 mousepos;
     Rigidbody2D ufoRB;
-    Vector2 velocity; 
+    Vector2 velocity;
     // Start is called before the first frame update
     void Start()
     {
