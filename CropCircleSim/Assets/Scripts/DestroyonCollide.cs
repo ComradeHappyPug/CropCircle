@@ -17,6 +17,7 @@ public class DestroyonCollide : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(this.gameObject);
+        if(Input.GetMouseButton(0))
+            Destroy(this.gameObject);
     }
 }
