@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     Timer timescript;
     float dotcount;
     float pathcount;
+    public float accuracy;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,20 +38,19 @@ public class GameManager : MonoBehaviour
     }
     void onlevelEnd()
     {
-        print(accuracydots());
+        accuracydots();
+        print(accuracy);
     }
 
     //finds accuracy by percentage of dots removed from map
-    float accuracydots()
+    void accuracydots()
     {
         float pathaccuracy;
         float dotaccuracy;
-        float accuracy;
         pathaccuracy = (1.0f -((float)GameObject.FindObjectsOfType<path>().Length / pathcount));
         print("pathcount:" + pathcount);
         print("pathcurrent:" + GameObject.FindObjectsOfType<path>().Length);
         dotaccuracy = (float)GameObject.FindObjectsOfType<dot>().Length / dotcount;
         accuracy = (pathaccuracy + dotaccuracy) / 2;
-        return accuracy;
     }
 }
