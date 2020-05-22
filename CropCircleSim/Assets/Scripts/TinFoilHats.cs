@@ -32,10 +32,9 @@ public class TinFoilHats : MonoBehaviour
 
         if (changedirection == false)
         {
-            direction = Random.Range(1, 4);
+            direction = Random.Range(1, 5);
             changedirection = true;
         }
-
 
         if (timer < timelim && changedirection)
         {
