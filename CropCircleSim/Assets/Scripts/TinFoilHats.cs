@@ -64,7 +64,6 @@ public class TinFoilHats : MonoBehaviour
                 TinFoilHat.velocity = new Vector2(velocity.x, 0f);
             }
             timer += Time.deltaTime;
-            print("velocityx" + velocity.x + "velocityy" + velocity.y);
         }
         else
         {
