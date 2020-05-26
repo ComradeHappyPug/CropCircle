@@ -5578,6 +5578,7 @@ GameObject:
   - component: {fileID: 435273357}
   - component: {fileID: 435273356}
   - component: {fileID: 435273355}
+  - component: {fileID: 435273358}
   m_Layer: 5
   m_Name: Button
   m_TagString: ShowOnPause
@@ -5647,7 +5648,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 435273356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 435273358}
+        m_MethodName: OnClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &435273356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5684,6 +5696,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435273353}
   m_CullTransparentMesh: 0
+--- !u!114 &435273358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435273353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba5ea43a7ee62e84087b0d4ac1abf950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextScene: LevelSelect
+  OtherNextScene: 
 --- !u!4 &435652555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7972568103719441589, guid: eb7d13db5884e6f4288d1e96fbfdda7a,
@@ -8994,7 +9020,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: Level Select
 --- !u!222 &556633717
 CanvasRenderer:
   m_ObjectHideFlags: 0
