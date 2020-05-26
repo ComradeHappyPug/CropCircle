@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5976115326935342410}
   m_Layer: 0
   m_Name: tinfoil
-  m_TagString: Untagged
+  m_TagString: tinfoil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   roamingspeed: 5
   roamingacceleration: 5
   roamtimelimit: 1
+  player: {fileID: 0}
 --- !u!50 &5976115326935342411
 Rigidbody2D:
   serializedVersion: 4

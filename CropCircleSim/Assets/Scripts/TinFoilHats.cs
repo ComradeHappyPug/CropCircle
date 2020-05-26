@@ -11,7 +11,8 @@ public class TinFoilHats : MonoBehaviour
     public float roamtimelimit;
     bool changedirection = false;
     int direction;
-    float timer; 
+    float timer;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,4 +72,6 @@ public class TinFoilHats : MonoBehaviour
             TinFoilHat.velocity = new Vector2(0f, 0f);
         }
     }
+
+
 }

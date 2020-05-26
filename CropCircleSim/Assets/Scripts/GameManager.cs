@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     float dotcount;
     float pathcount;
     public float accuracy;
+    GameObject[] pauseObjects;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,11 @@ public class GameManager : MonoBehaviour
         print(pathcount);
         
         timescript = FindObjectOfType<Timer>();
+        pauseObjects = GameObject.FindGameObjectsWithTag("ShowOnPause");
+        foreach (GameObject g in pauseObjects)
+        {
+            g.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +46,11 @@ public class GameManager : MonoBehaviour
     {
         accuracydots();
         print(accuracy);
+        Time.timeScale = 0;
+        foreach (GameObject g in pauseObjects)
+        {
+            g.SetActive(true);
+        }
     }
 
     //finds accuracy by percentage of dots removed from map
