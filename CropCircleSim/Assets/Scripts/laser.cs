@@ -5,6 +5,7 @@ using UnityEngine;
 public class laser : MonoBehaviour
 {
 	public AudioSource lasersound;
+	public int playedsound = 0;
     SpriteRenderer sprite;
     // Start is called before the first frame update
     void Start()
@@ -27,14 +28,21 @@ public class laser : MonoBehaviour
 		}
 		//LaserGoPewPew();
     }
-	
+	//Players
+	//
 	public void LaserGoPewPew()
 	{
-		lasersound.Play();
+		if(playedsound == 0)
+		{
+			lasersound.Play();
+			playedsound++;
+		}
+		
 	}
 	
 	public void LaserStopPewPew()
 	{
 		lasersound.Stop();
+		playedsound = 0;
 	}
 }
