@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class killOnTinfoilHat : MonoBehaviour
 {
+    Timer timescript;
+    AudioSource deathsound;
     // Start is called before the first frame update
     void Start()
     {
-        
+        timescript = FindObjectOfType<Timer>();
+        deathsound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,7 +24,10 @@ public class killOnTinfoilHat : MonoBehaviour
         print("collision");
         if (collision.gameObject.tag == "tinfoil" && Input.GetMouseButton(0))
         {
-            Destroy(this.gameObject);
+            deathsound.Play();
+            timescript.time = 0;
+            //Destroy(this.gameObject);
+
         }
     }
 }
