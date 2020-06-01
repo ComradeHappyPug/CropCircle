@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,7 +15,10 @@ public class GameManager : MonoBehaviour
     float dotcount;
     float pathcount;
     public float accuracy;
+    public float score;
     GameObject[] pauseObjects;
+    public float[] levelscores;
+    public float gamescore = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +35,7 @@ public class GameManager : MonoBehaviour
         {
             g.SetActive(false);
         }
+        levelscores = new float[15];
     }
 
     // Update is called once per frame
@@ -41,6 +46,7 @@ public class GameManager : MonoBehaviour
             print("gameend");
             onlevelEnd();
         }
+        gamescorecalc();
     }
     void onlevelEnd()
     {
@@ -63,5 +69,24 @@ public class GameManager : MonoBehaviour
         print("pathcurrent:" + GameObject.FindObjectsOfType<path>().Length);
         dotaccuracy = (float)GameObject.FindObjectsOfType<dot>().Length / dotcount;
         accuracy = (pathaccuracy + dotaccuracy) / 2;
+        score = accuracy * 1000f;
+        levelscor();
+    }
+
+    void levelscor()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        int i = scene.buildIndex; 
+        levelscores[i] = score;
+    }
+
+    void gamescorecalc()
+    {
+        int i;
+        for (i = 0; i < 15; i++)
+        {
+            gamescore += levelscores[i];
+        }
+        print(gamescore);
     }
 }
