@@ -57538,7 +57538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a134c329665b54099d0b4d5c991c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timelim: 12
+  timelim: 13
   length: 19.5
   time: 0
   timer: {fileID: 1403537768}
@@ -84363,6 +84363,7 @@ MonoBehaviour:
   score: 0
   levelscores: []
   gamescore: 0
+  totalScore: 5
 --- !u!4 &2035188665
 Transform:
   m_ObjectHideFlags: 0

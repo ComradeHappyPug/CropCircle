@@ -34725,13 +34725,10 @@ Transform:
   m_Children:
   - {fileID: 173766561}
   - {fileID: 785673309}
-  - {fileID: 1852920425}
   - {fileID: 746640502}
-  - {fileID: 1107654137}
   - {fileID: 1480420355}
   - {fileID: 1166567230}
   - {fileID: 517602214}
-  - {fileID: 61532221}
   - {fileID: 1153941566}
   - {fileID: 263965039}
   - {fileID: 1984806406}
@@ -34832,29 +34829,32 @@ Transform:
   - {fileID: 607135098}
   - {fileID: 1285465210}
   - {fileID: 1214862038}
+  - {fileID: 1107654137}
   - {fileID: 864498863}
+  - {fileID: 628870088}
   - {fileID: 674122828}
+  - {fileID: 1915390435}
   - {fileID: 254140972}
   - {fileID: 1480330631}
   - {fileID: 21980454}
+  - {fileID: 745531108}
   - {fileID: 1497340197}
   - {fileID: 1730077944}
-  - {fileID: 222174582}
-  - {fileID: 1962986948}
+  - {fileID: 61532221}
   - {fileID: 1286735774}
-  - {fileID: 1915390435}
+  - {fileID: 1962986948}
   - {fileID: 557057351}
-  - {fileID: 745531108}
-  - {fileID: 628870088}
+  - {fileID: 222174582}
+  - {fileID: 1852920425}
   - {fileID: 948492433}
+  - {fileID: 1074059448}
+  - {fileID: 18996043}
+  - {fileID: 560348387}
+  - {fileID: 731202170}
   - {fileID: 1565060121}
+  - {fileID: 1904228578}
   - {fileID: 269098781}
   - {fileID: 1888592307}
-  - {fileID: 731202170}
-  - {fileID: 18996043}
-  - {fileID: 1904228578}
-  - {fileID: 560348387}
-  - {fileID: 1074059448}
   m_Father: {fileID: 1002398873}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59615,7 +59615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25a134c329665b54099d0b4d5c991c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timelim: 10
+  timelim: 15
   length: 19.5
   time: 0
   timer: {fileID: 1403537768}
@@ -86878,6 +86878,7 @@ MonoBehaviour:
   score: 0
   levelscores: []
   gamescore: 0
+  totalScore: 5
 --- !u!4 &2035188665
 Transform:
   m_ObjectHideFlags: 0
