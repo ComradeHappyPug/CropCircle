@@ -27,5 +27,9 @@ public class stardisp : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+		//else
+		//{
+		//	FindObjectOfType<GameManager>().level1star1 = true;
+		//}
     }
 }

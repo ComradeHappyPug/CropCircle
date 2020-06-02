@@ -12,7 +12,7 @@ using UnityEngine;
 public class killOnTinfoilHat : MonoBehaviour
 {
     Timer timescript;
-    AudioSource deathsound;
+    public AudioSource deathsound;
     // Start is called before the first frame update
     void Start()
     {
