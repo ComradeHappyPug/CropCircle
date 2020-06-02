@@ -34,7 +34,7 @@ public class accuracybar : MonoBehaviour
         {
             localscale.x = length * (FindObjectOfType<GameManager>().accuracy);
             bar.transform.localScale = localscale;
-            bar.transform.position += new Vector3(-1*((length / 2) -(localscale.x/2)),0f,0f);
+            bar.transform.position -= new Vector3((length/2) - (localscale.x/2),0f,0f);
             gameend = true;
         }
     }
