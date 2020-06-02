@@ -7,6 +7,7 @@ public class SceneChange : MonoBehaviour
 {
     public string NextScene;
     public string OtherNextScene;
+
     public void OnClick(string StartButton)
     {
         SceneManager.LoadScene(NextScene, LoadSceneMode.Single);

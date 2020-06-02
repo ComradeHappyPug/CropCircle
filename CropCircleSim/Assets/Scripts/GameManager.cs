@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
             g.SetActive(false);
         }
         levelscores = new float[15];
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame

@@ -26,7 +26,7 @@ public class killOnTinfoilHat : MonoBehaviour
         {
             deathsound.Play();
             timescript.time = 0;
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
 
         }
     }

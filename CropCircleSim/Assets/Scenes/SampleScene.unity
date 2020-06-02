@@ -87343,6 +87343,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5976115326935342410, guid: e656325d18d042847bcd912dd0e2eb76,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5976115326935342452, guid: e656325d18d042847bcd912dd0e2eb76,
         type: 3}
       propertyPath: player
