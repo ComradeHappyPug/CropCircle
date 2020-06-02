@@ -99,7 +99,7 @@ MonoBehaviour:
   roamingspeed: 5
   roamingacceleration: 5
   roamtimelimit: 1
-  player: {fileID: 0}
+  player: {fileID: 1615894466024113943, guid: 22ee23e1fca2fa0498ffbe1c8212efba, type: 3}
 --- !u!50 &5976115326935342411
 Rigidbody2D:
   serializedVersion: 4

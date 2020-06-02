@@ -7,16 +7,18 @@ public class laser : MonoBehaviour
 	public AudioSource lasersound;
 	public int playedsound = 0;
     SpriteRenderer sprite;
+	Timer timescript;
     // Start is called before the first frame update
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-    }
+		timescript = FindObjectOfType<Timer>();
+	}
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && timescript.time>0)
         {
             sprite.color += new Color(0f, 0f, 0f, 255f);
 			LaserGoPewPew();
