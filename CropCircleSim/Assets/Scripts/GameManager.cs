@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
     GameObject[] pauseObjects;
     public float[] levelscores;
     public float gamescore = 0;
+	private int done = 0;
+	public float totalScore = 5;
+	//public bool level1star1 = false;
+	//public bool level1star2 = false;
+	//public bool level1star3 = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +46,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timescript.time <= 0)
+        if (timescript.time <= 0 && done == 0)
         {
             print("gameend");
             onlevelEnd();
+			gamescorecalc();
+			done = 1;
         }
-        gamescorecalc();
+        //gamescorecalc();
     }
     void onlevelEnd()
     {
@@ -57,6 +64,7 @@ public class GameManager : MonoBehaviour
         {
             g.SetActive(true);
         }
+		totalScore = score;
     }
 
     //finds accuracy by percentage of dots removed from map

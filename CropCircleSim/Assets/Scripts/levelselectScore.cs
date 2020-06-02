@@ -5,18 +5,25 @@ using UnityEngine.UI;
 
 public class levelselectScore : MonoBehaviour
 {
-    Text scoretxt;
-    float gamescore = 0;
+	Text scoretxt;
+	//public int overallGameScore = 0;
     // Start is called before the first frame update
     void Start()
     {
         scoretxt = GetComponent<Text>();
+		//overallGameScore += (int)FindObjectOfType<GameManager>().totalScore;
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoretxt.text = "score "+ (int)FindObjectOfType<GameManager>().gamescore;
+		//overallGameScore = (int)FindObjectOfType<GameManager>().totalScore;
+        scoretxt.text = "score "+ (int)FindObjectOfType<GameManager>().totalScore;
+		
+		//if(FindObjectOfType<GameManager>().level1star1 == true)
+		//{
+		//	scoretxt.text = "one star";
+		//}
     }
     
   

@@ -133,8 +133,9 @@ GameObject:
   - component: {fileID: 403684171}
   - component: {fileID: 403684170}
   - component: {fileID: 403684172}
+  - component: {fileID: 403684173}
   m_Layer: 5
-  m_Name: Text
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +191,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: score
+  m_Text: Score
 --- !u!222 &403684171
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -206,9 +207,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403684168}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9111ff2af2833fc448144e6688c7d017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &403684173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403684168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd3902e9c516b94cbb6542e3cd0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &441982191
@@ -797,6 +810,7 @@ MonoBehaviour:
   score: 0
   levelscores: []
   gamescore: 0
+  totalScore: 0
 --- !u!1 &1597633564
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,7 +823,7 @@ GameObject:
   - component: {fileID: 1597633567}
   - component: {fileID: 1597633566}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class killOnTinfoilHat : MonoBehaviour
 {
     Timer timescript;
-    AudioSource deathsound;
+    public AudioSource deathsound;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +26,7 @@ public class killOnTinfoilHat : MonoBehaviour
         {
             deathsound.Play();
             timescript.time = 0;
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
 
         }
     }
