@@ -3,6 +3,8 @@
  * By: Esther Strathy
  * 5/26/2020
  * Description: transforms bar 
+ * All content © 2020 DigiPen (USA) Corporation, all rights reserved.
+ * 
  * 
  */
 

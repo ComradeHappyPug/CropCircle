@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/*
+ * Mousefollow.cs
+ * By: Esther Strathy
+ * 6/2/2020
+ * All content © 2020 DigiPen (USA) Corporation, all rights reserved.
+ * 
+ * 
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

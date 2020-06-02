@@ -2,6 +2,7 @@
  * By: Esther Strathy
  * 5/20/2020
  * Description: runs end of level script which counts up accuracy of player by counting which dots were destroyed 
+ * All content © 2020 DigiPen (USA) Corporation, all rights reserved.
  * 
  *****************/
 using System.Collections;

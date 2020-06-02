@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * All content © 2020 DigiPen (USA) Corporation, all rights reserved.
+ * 
+ * 
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
