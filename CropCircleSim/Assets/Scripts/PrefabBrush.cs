@@ -1,3 +1,8 @@
+/*
+ * All content © 2020 DigiPen (USA) Corporation, all rights reserved.
+ * 
+ * 
+ */
 using System;
 using UnityEngine;
 using Object = UnityEngine.Object;
